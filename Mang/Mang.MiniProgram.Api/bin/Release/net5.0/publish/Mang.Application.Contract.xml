@@ -1,0 +1,1057 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mang.Application.Contract</name>
+    </assembly>
+    <members>
+        <member name="T:Mang.Application.Contract.Notes.Dtos.CreateNoteDto">
+            <summary>
+            创建纸条参数
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Notes.Dtos.CreateNoteDto.Content">
+            <summary>
+            纸条内容
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Notes.Dtos.NoteDto">
+            <summary>
+            纸条信息
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Notes.Dtos.NoteDto.UserId">
+            <summary>
+            投放纸条的用户ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Notes.Dtos.NoteDto.WechatNum">
+            <summary>
+            微信号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Notes.Dtos.NoteDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Notes.Dtos.NoteDto.AvatarUrl">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Notes.Dtos.NoteDto.Content">
+            <summary>
+            纸条内容
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Notes.INoteService">
+            <summary>
+            纸条服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.Notes.INoteService.GetAsync(Game.Domain.Shared.Gender)">
+            <summary>
+            获取一张特定性别的纸条
+            </summary>
+            <param name="gender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.Notes.INoteService.CreateAsync(Mang.Application.Contract.Notes.Dtos.CreateNoteDto)">
+            <summary>
+            投放一张纸条
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Accounts.AccountDto">
+            <summary>
+            登录用户数据
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Accounts.AccountMenuDto">
+            <summary>
+            用户菜单
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.Component">
+            <summary>
+            页面组件
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.AccountMenuDto.Children">
+            <summary>
+            子级菜单
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Accounts.LoginDto">
+            <summary>
+            登录请求参数
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.LoginDto.Identifer">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.LoginDto.Credential">
+            <summary>
+            登录凭据
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Accounts.LoginDto.Type">
+            <summary>
+            登录方式
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Accounts.LoginType">
+            <summary>
+            登录方式
+            </summary>
+        </member>
+        <member name="F:Mang.Application.Contract.System.Accounts.LoginType.Account">
+            <summary>
+            账号登录
+            </summary>
+        </member>
+        <member name="F:Mang.Application.Contract.System.Accounts.LoginType.Phone">
+            <summary>
+            手机号登录
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Accounts.IAccountService">
+            <summary>
+            管理员用户服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.SendCaptchaAsync(System.String)">
+            <summary>
+            发送登录验证码
+            </summary>
+            <param name="phone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.LoginAsync(Mang.Application.Contract.System.Accounts.LoginDto)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.GetUserAsync">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.GetMenuAsync">
+            <summary>
+            获取用户菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.GetPermissionAsync">
+            <summary>
+            获取用户操作权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.CheckPermissionAsync(System.Int32,System.String)">
+            <summary>
+            校验账号权限
+            </summary>
+            <param name="userId"></param>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Accounts.IAccountService.LogoutAsync">
+            <summary>
+            退出登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.AdminDto">
+            <summary>
+            用户实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminDto.Email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminDto.RoleIds">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.AdminListDto">
+            <summary>
+            用户列表
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminListDto.Name">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminListDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminListDto.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminListDto.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AdminListDto.Roles">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.AssignRoleDto">
+            <summary>
+            分配角色业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AssignRoleDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.AssignRoleDto.RoleIds">
+            <summary>
+            角色ID集合
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.CreateUpdateAdminDto">
+            <summary>
+            创建用户业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.CreateUpdateAdminDto.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.CreateUpdateAdminDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.CreateUpdateAdminDto.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.CreateUpdateAdminDto.RoleIds">
+            <summary>
+            角色ID集合
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.CreateUpdateAdminDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.GetAdminListDto">
+            <summary>
+            获取用户业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.GetAdminListDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.GetAdminListDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.GetAdminListDto.IsEnable">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.ResetPasswordDto">
+            <summary>
+            重置密码参数
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.ResetPasswordDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Admins.ResetPasswordDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Admins.IAdminService">
+            <summary>
+            用户服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Admins.IAdminService.AssignRoleAsync(Mang.Application.Contract.System.Admins.AssignRoleDto)">
+            <summary>
+            分配角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Admins.IAdminService.ResetPasswordAsync(Mang.Application.Contract.System.Admins.ResetPasswordDto)">
+            <summary>
+            重置用户密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Admins.IAdminService.SetIsEnableAsync(Mang.Public.Dto.SetIsEnableDto)">
+            <summary>
+            设置用户状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Files.FileDto">
+            <summary>
+            文件
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Files.FileDto.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Files.FileDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Files.IFileService">
+            <summary>
+            文件服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Files.IFileService.UploadAsync(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            上传
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Logs.GetLogListDto">
+            <summary>
+            获取日志列表条件
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.BeginTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.RequestUrl">
+            <summary>
+            请求接口
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.Application">
+            <summary>
+            解决方案名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.TraceId">
+            <summary>
+            请求链路ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.Level">
+            <summary>
+            请求链路ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.UserName">
+            <summary>
+            请求链路ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.GetLogListDto.Message">
+            <summary>
+            日志信息
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Logs.LogDto">
+            <summary>
+            日志详情
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Logs.LogListDto">
+            <summary>
+            日志列表
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.Application">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.TraceId">
+            <summary>
+            guid链路
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.Level">
+            <summary>
+            日志级别
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.UserName">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.Message">
+            <summary>
+            日志信息
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.RequestUrl">
+            <summary>
+            请求地址
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.Action">
+            <summary>
+            具体action
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.CallSite">
+            <summary>
+            日志记录路径
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.Ip">
+            <summary>
+            Ip地址
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.UserAgent">
+            <summary>
+            客户端代理
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Logs.LogListDto.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Logs.ILogService">
+            <summary>
+            系统日志服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Logs.ILogService.GetLevelDictionaryAsync">
+            <summary>
+            获取日志等级字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Menus.BindPermissionDto">
+            <summary>
+            绑定权限业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.BindPermissionDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto">
+            <summary>
+            创建菜单业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.Component">
+            <summary>
+            视图组件
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.CreateUpdateMenuDto.Sort">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Menus.GetMenuListDto">
+            <summary>
+            获取菜单列表业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.GetMenuListDto.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Menus.MenuDto">
+            <summary>
+            菜单业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuDto.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Menus.MenuListDto">
+            <summary>
+            菜单列表业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.PermissionName">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Redirect">
+            <summary>
+            重定向
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Menus.MenuListDto.Children">
+            <summary>
+            子级菜单
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Menus.IMenuService">
+            <summary>
+            菜单服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Menus.IMenuService.GetAsync">
+            <summary>
+            获取菜单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Menus.IMenuService.GetAsync(System.Int32)">
+            <summary>
+            获取菜单详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Menus.IMenuService.CreateAsync(Mang.Application.Contract.System.Menus.CreateUpdateMenuDto)">
+            <summary>
+            创建菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Menus.IMenuService.UpdateAsync(System.Int32,Mang.Application.Contract.System.Menus.CreateUpdateMenuDto)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Menus.IMenuService.SetIsEnableAsync(Mang.Public.Dto.SetIsEnableDto)">
+            <summary>
+            设置启用/禁用状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Menus.IMenuService.DeleteAsync(System.Int32)">
+            <summary>
+            删除菜单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Permissions.MenuPermissionDto">
+            <summary>
+            菜单权限
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.MenuPermissionDto.Module">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.MenuPermissionDto.Permissions">
+            <summary>
+            菜单权限
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Permissions.PermissionModuleDto">
+            <summary>
+            按模块权限业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.PermissionModuleDto.Module">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.PermissionModuleDto.Permissions">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Permissions.PermissionDto">
+            <summary>
+            权限业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.PermissionDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.PermissionDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.PermissionDto.DisplayName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Permissions.PermissionDto.Children">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Permissions.IPermissionService">
+            <summary>
+            权限服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Permissions.IPermissionService.GetAsync">
+            <summary>
+            获取权限数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Permissions.IPermissionService.GetMenuPermissionAsync">
+            <summary>
+            获取菜单类型权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Permissions.IPermissionService.GetAsync(System.Int32)">
+            <summary>
+            根据用户ID获取权限
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.AssignPermissionDto">
+            <summary>
+            分配角色权限业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.AssignPermissionDto.Id">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.AssignPermissionDto.PermissionIds">
+            <summary>
+            权限ID集合
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.CreateUpdateRoleDto">
+            <summary>
+            创建角色业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.CreateUpdateRoleDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.CreateUpdateRoleDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.GetRoleListDto">
+            <summary>
+            获取角色列表业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.GetRoleListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.RoleDto">
+            <summary>
+            角色业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RoleDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RoleDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.RoleListDto">
+            <summary>
+            角色列表业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RoleListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RoleListDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.RolePermissionDto">
+            <summary>
+            角色权限业务实体
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RolePermissionDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RolePermissionDto.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RolePermissionDto.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.System.Roles.RolePermissionDto.DisplayName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.System.Roles.IRoleService">
+            <summary>
+            角色服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Roles.IRoleService.GetDictionaryAsync">
+            <summary>
+            获取角色字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Roles.IRoleService.GetPermissionAsync(System.Int32)">
+            <summary>
+            获取角色权限ID
+            </summary>
+            <param name="id">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Roles.IRoleService.AssignPermissionAsync(Mang.Application.Contract.System.Roles.AssignPermissionDto)">
+            <summary>
+            分配角色权限
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:Mang.Application.Contract.System.Roles.IRoleService.SetIsEnableAsync(Mang.Public.Dto.SetIsEnableDto)">
+            <summary>
+            设置用户状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.Tasks.TaskDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Tasks.TaskDto.IsEnable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Tasks.TaskDto.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Tasks.ITaskService">
+            <summary>
+            任务服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.Tasks.ITaskService.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.Users.LoginUserDto">
+            <summary>
+            登录用户
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.LoginUserDto.Code">
+            <summary>
+            授权码
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.LoginUserDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.LoginUserDto.AvatarUrl">
+            <summary>
+            头像地址
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Users.RegisterUserDto">
+            <summary>
+            用户完成注册参数
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.WechatNum">
+            <summary>
+            微信号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.Hobby">
+            <summary>
+            兴趣/爱好
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Users.UserLoginDto">
+            <summary>
+            登录参数
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.UserLoginDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.UserLoginDto.AvatarUrl">
+            <summary>
+            头像地址
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.UserLoginDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.UserLoginDto.IsVip">
+            <summary>
+            是否VIP
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.UserLoginDto.IsFinishRegister">
+            <summary>
+            是否完成注册
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Users.IUserService">
+            <summary>
+            用户服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.Users.IUserService.LoginAsync(System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.Application.Contract.Users.IUserService.RegisterAsync(Mang.Application.Contract.Users.RegisterUserDto)">
+            <summary>
+            完成用户注册
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.Application.Contract.UserShareds.CreateUserSharedDto">
+            <summary>
+            创建用户分享参数
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.UserShareds.IUserSharedService">
+            <summary>
+            用户分享服务接口
+            </summary>
+        </member>
+        <member name="M:Mang.Application.Contract.UserShareds.IUserSharedService.CreateAsync(Mang.Application.Contract.UserShareds.CreateUserSharedDto)">
+            <summary>
+            添加一条用户分享数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

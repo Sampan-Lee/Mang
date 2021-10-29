@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mang.Domain.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Game.Domain.Shared.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+    </members>
+</doc>

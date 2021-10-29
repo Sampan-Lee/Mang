@@ -1,0 +1,13 @@
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/bin/Release/net5.0/Mang.Domain.Shared.deps.json
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/bin/Release/net5.0/Mang.Domain.Shared.dll
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/bin/Release/net5.0/ref/Mang.Domain.Shared.dll
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/bin/Release/net5.0/Mang.Domain.Shared.pdb
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.csproj.AssemblyReference.cache
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.AssemblyInfoInputs.cache
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.AssemblyInfo.cs
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.csproj.CoreCompileInputs.cache
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.dll
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/ref/Mang.Domain.Shared.dll
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/Release/net5.0/Mang.Domain.Shared.pdb
+/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/bin/Release/net5.0/Mang.Domain.Shared.xml

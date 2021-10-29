@@ -1,0 +1,8 @@
+2021-10-27 20:00:56.6948||FATAL              
+Message:Unable to start Kestrel.              
+Exception:Failed to bind to address https://127.0.0.1:5001: address already in use.              
+
+2021-10-27 20:01:25.1211||FATAL              
+Message:Unable to start Kestrel.              
+Exception:Failed to bind to address http://127.0.0.1:5000: address already in use.              
+

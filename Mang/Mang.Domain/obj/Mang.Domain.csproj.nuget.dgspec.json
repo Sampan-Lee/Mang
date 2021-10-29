@@ -1,0 +1,482 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain/Mang.Domain.csproj": {}
+  },
+  "projects": {
+    "/Users/sampan/WorkSpace/Mang/Mang.Common/Game.BaseService/Mang.BaseService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sampan/WorkSpace/Mang/Mang.Common/Game.BaseService/Mang.BaseService.csproj",
+        "projectName": "Mang.BaseService",
+        "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Game.BaseService/Mang.BaseService.csproj",
+        "packagesPath": "/Users/sampan/.nuget/packages/",
+        "outputPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Game.BaseService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sampan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj"
+              },
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj",
+        "projectName": "Mang.Infrastructure",
+        "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj",
+        "packagesPath": "/Users/sampan/.nuget/packages/",
+        "outputPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sampan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "Castle.Core.AsyncInterceptor": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "FreeSql.Repository": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.14.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.7, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj",
+        "projectName": "Mang.Public",
+        "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj",
+        "packagesPath": "/Users/sampan/.nuget/packages/",
+        "outputPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sampan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "FreeSql.DbContext": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2021.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21103.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.International.Converters.PinYinConverter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.14.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.7, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "NPinyin.Core": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1-beta1, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/Mang.ServiceBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/Mang.ServiceBase.csproj",
+        "projectName": "Mang.ServiceBase",
+        "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/Mang.ServiceBase.csproj",
+        "packagesPath": "/Users/sampan/.nuget/packages/",
+        "outputPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sampan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Infrastructure/Mang.Infrastructure.csproj"
+              },
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/Mang.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/Mang.Domain.Shared.csproj",
+        "projectName": "Mang.Domain.Shared",
+        "projectPath": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/Mang.Domain.Shared.csproj",
+        "packagesPath": "/Users/sampan/.nuget/packages/",
+        "outputPath": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sampan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain/Mang.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain/Mang.Domain.csproj",
+        "projectName": "Mang.Domain",
+        "projectPath": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain/Mang.Domain.csproj",
+        "packagesPath": "/Users/sampan/.nuget/packages/",
+        "outputPath": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sampan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Game.BaseService/Mang.BaseService.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Game.BaseService/Mang.BaseService.csproj"
+              },
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/Mang.Public.csproj"
+              },
+              "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/Mang.ServiceBase.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/Mang.ServiceBase.csproj"
+              },
+              "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/Mang.Domain.Shared.csproj": {
+                "projectPath": "/Users/sampan/WorkSpace/Mang/Mang/Mang.Domain.Shared/Mang.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "Longbow.Security.Cryptography": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

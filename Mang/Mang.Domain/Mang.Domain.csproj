@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>Game.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FreeSql" Version="2.5.100" />
+      <PackageReference Include="Longbow.Security.Cryptography" Version="5.0.0" />
+      <PackageReference Include="MongoDB.Bson" Version="2.13.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Mang.Common\Game.BaseService\Mang.BaseService.csproj" />
+      <ProjectReference Include="..\..\Mang.Common\Mang.ServiceBase\Mang.ServiceBase.csproj" />
+      <ProjectReference Include="..\..\Mang.Common\Mang.Public\Mang.Public.csproj" />
+      <ProjectReference Include="..\Mang.Domain.Shared\Mang.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,458 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Application/Game.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Application.Contract/Game.Application.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application.Contract/Game.Application.Contract.csproj",
+        "projectName": "Game.Application.Contract",
+        "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application.Contract/Game.Application.Contract.csproj",
+        "packagesPath": "/Users/Game/.nuget/packages/",
+        "outputPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application.Contract/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Game/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj"
+              },
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain/Game.Domain.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain/Game.Domain.csproj"
+              },
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Application/Game.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application/Game.Application.csproj",
+        "projectName": "Game.Application",
+        "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application/Game.Application.csproj",
+        "packagesPath": "/Users/Game/.nuget/packages/",
+        "outputPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Game/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Application.Contract/Game.Application.Contract.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Application.Contract/Game.Application.Contract.csproj"
+              },
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Longbow.Security.Cryptography": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj",
+        "projectName": "Game.Domain.Shared",
+        "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj",
+        "packagesPath": "/Users/Game/.nuget/packages/",
+        "outputPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Game/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain/Game.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain/Game.Domain.csproj",
+        "projectName": "Game.Domain",
+        "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain/Game.Domain.csproj",
+        "packagesPath": "/Users/Game/.nuget/packages/",
+        "outputPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Game/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Domain.Shared/Game.Domain.Shared.csproj"
+              },
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj"
+              },
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "Longbow.Security.Cryptography": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj",
+        "projectName": "Game.Infrastructure",
+        "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/Game.Infrastructure.csproj",
+        "packagesPath": "/Users/Game/.nuget/packages/",
+        "outputPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Game/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj": {
+                "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "Castle.Core.AsyncInterceptor": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "FreeSql.Repository": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.7, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj",
+        "projectName": "Game.Public",
+        "projectPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/Game.Public.csproj",
+        "packagesPath": "/Users/Game/.nuget/packages/",
+        "outputPath": "/Users/Game/WorkSpace/GameAdmin/src/Game.Public/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Game/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.5.100, )"
+            },
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2021.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21103.6, )"
+            },
+            "Microsoft.International.Converters.PinYinConverter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.7, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "NPinyin.Core": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1-beta1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

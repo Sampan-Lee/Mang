@@ -1,0 +1,17 @@
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Service.deps.json
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Service.dll
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/ref/Game.Service.dll
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Service.pdb
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Infrastructure.dll
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Public.dll
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Infrastructure.pdb
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/bin/Release/net5.0/Game.Public.pdb
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.csproj.AssemblyReference.cache
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.AssemblyInfoInputs.cache
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.AssemblyInfo.cs
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.csproj.CoreCompileInputs.cache
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.csproj.CopyComplete
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.dll
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/ref/Game.Service.dll
+/Users/sampan/WorkSpace/Game/Game.Common/Game.BaseService/obj/Release/net5.0/Game.Service.pdb

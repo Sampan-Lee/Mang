@@ -1,0 +1,12 @@
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/bin/Debug/net5.0/Game.Domain.Shared.deps.json
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/bin/Debug/net5.0/Game.Domain.Shared.dll
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/bin/Debug/net5.0/ref/Game.Domain.Shared.dll
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/bin/Debug/net5.0/Game.Domain.Shared.pdb
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.csproj.AssemblyReference.cache
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.AssemblyInfoInputs.cache
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.AssemblyInfo.cs
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.csproj.CoreCompileInputs.cache
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.dll
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/ref/Game.Domain.Shared.dll
+/Users/sampan/WorkSpace/GameAdmin/src/Game.Domain.Shared/obj/Debug/net5.0/Game.Domain.Shared.pdb

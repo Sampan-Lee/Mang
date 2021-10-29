@@ -1,0 +1,24 @@
+2021-10-21 10:27:48.6245|968445dd-dd89-4db2-9b80-41e05ac08dfb|ERROR              
+Message:在执行 controller[Account] 的 action[Login] 时产生异常,异常信息:Unable to resolve service for type 'Game.Application.Contract.Users.IUserService' while attempting to activate 'Mang.MiniProgrom.Api.Controllers.AccountController'.              
+Exception:Unable to resolve service for type 'Game.Application.Contract.Users.IUserService' while attempting to activate 'Mang.MiniProgrom.Api.Controllers.AccountController'.              
+
+2021-10-21 10:29:14.1108|65e0b183-f7bd-4238-826f-727aa93c2890|ERROR              
+Message:在执行 controller[Account] 的 action[Login] 时产生异常,异常信息:Unable to resolve service for type 'Mang.Application.Contract.Users.IUserService' while attempting to activate 'Mang.MiniProgrom.Api.Controllers.AccountController'.              
+Exception:Unable to resolve service for type 'Mang.Application.Contract.Users.IUserService' while attempting to activate 'Mang.MiniProgrom.Api.Controllers.AccountController'.              
+
+2021-10-21 10:32:55.7840|c0c8f575-bf1e-4249-9330-8b4c147fd574|ERROR              
+Message:在执行 controller[Account] 的 action[Login] 时产生异常,异常信息:Unable to resolve service for type 'Mang.Application.Contract.Users.IUserService' while attempting to activate 'Mang.MiniProgrom.Api.Controllers.AccountController'.              
+Exception:Unable to resolve service for type 'Mang.Application.Contract.Users.IUserService' while attempting to activate 'Mang.MiniProgrom.Api.Controllers.AccountController'.              
+
+2021-10-21 10:35:06.3565|384feb1d-15e7-4550-817b-50cd31984f1c|ERROR              
+Message:在执行 controller[Account] 的 action[Login] 时产生异常,异常信息:An exception was thrown while activating Mang.Application.Users.UserService -> Mang.Infrastructure.MiniProgram.Auths.MiniProgramAuth.              
+Exception:An exception was thrown while activating Mang.Application.Users.UserService -> Mang.Infrastructure.MiniProgram.Auths.MiniProgramAuth.              
+
+2021-10-21 10:40:01.2308|94463b5e-3b67-4b23-9583-0c8ea85d601a|ERROR              
+Message:在执行 controller[Account] 的 action[Login] 时产生异常,异常信息:An exception was thrown while activating Mang.Application.Users.UserService -> Mang.Infrastructure.MiniProgram.Auths.MiniProgramAuth.              
+Exception:An exception was thrown while activating Mang.Application.Users.UserService -> Mang.Infrastructure.MiniProgram.Auths.MiniProgramAuth.              
+
+2021-10-21 10:50:01.8694|fce95070-45e0-4d79-a8a2-28e434108157|ERROR              
+Message:在执行 controller[Account] 的 action[Login] 时产生异常,异常信息:code can not be null, empty or white space! (Parameter 'code')              
+Exception:code can not be null, empty or white space! (Parameter 'code')              
+

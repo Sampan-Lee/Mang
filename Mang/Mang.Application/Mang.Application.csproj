@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>Mang.Application</RootNamespace>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile></DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Mang.Application.Contract\Mang.Application.Contract.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="10.1.1" />
+      <PackageReference Include="Longbow.Security.Cryptography" Version="5.0.0" />
+      <PackageReference Include="MongoDB.Driver" Version="2.13.1" />
+      <PackageReference Include="NEST" Version="7.14.1" />
+      <PackageReference Include="NPOI" Version="2.5.4" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/bin/Debug/netstandard2.0/Mang.Public.deps.json
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/bin/Debug/netstandard2.0/Mang.Public.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/bin/Debug/netstandard2.0/Mang.Public.pdb
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.csproj.AssemblyReference.cache
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.AssemblyInfoInputs.cache
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.AssemblyInfo.cs
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.csproj.CoreCompileInputs.cache
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Public/obj/Debug/netstandard2.0/Mang.Public.pdb

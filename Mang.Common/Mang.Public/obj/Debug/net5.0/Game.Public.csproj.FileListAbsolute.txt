@@ -1,0 +1,12 @@
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/bin/Debug/net5.0/Game.Public.deps.json
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/bin/Debug/net5.0/Game.Public.dll
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/bin/Debug/net5.0/ref/Game.Public.dll
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/bin/Debug/net5.0/Game.Public.pdb
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.csproj.AssemblyReference.cache
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.AssemblyInfoInputs.cache
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.AssemblyInfo.cs
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.csproj.CoreCompileInputs.cache
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.dll
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/ref/Game.Public.dll
+/Users/sampan/WorkSpace/GameAdmin/Game.Common/Game.Public/obj/Debug/net5.0/Game.Public.pdb

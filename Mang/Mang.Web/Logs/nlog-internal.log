@@ -1,0 +1,96 @@
+2021-10-15 18:57:51.0704 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:51.0833 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:51.0841 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:51.0841 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:52.9600 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:52.9600 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:52.9610 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 18:57:52.9610 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:02.8766 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:02.8893 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:02.8893 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:02.8908 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:04.7556 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:04.7564 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:04.7564 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:04.7564 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:36.7494 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:36.7620 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:36.7625 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:36.7635 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:38.7614 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:38.7614 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:38.7614 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-15 19:02:38.7625 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:03.6424 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:03.6549 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:03.6553 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:03.6564 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:05.8053 Error Error parsing layout traceId will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'traceId'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:05.8053 Error Error parsing layout userid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'userid'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:05.8063 Error Error parsing layout requesturl will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'requesturl'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)
+2021-10-22 14:28:05.8063 Error Error parsing layout clientip will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'clientip'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name, Nullable`1 throwConfigExceptions)

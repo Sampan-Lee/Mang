@@ -1,0 +1,17 @@
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.ServiceBase.deps.json
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.ServiceBase.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/ref/Mang.ServiceBase.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.ServiceBase.pdb
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.Infrastructure.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.Public.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.Infrastructure.pdb
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/bin/Debug/net5.0/Mang.Public.pdb
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.csproj.AssemblyReference.cache
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.AssemblyInfoInputs.cache
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.AssemblyInfo.cs
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.csproj.CoreCompileInputs.cache
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.csproj.CopyComplete
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/ref/Mang.ServiceBase.dll
+/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.ServiceBase/obj/Debug/net5.0/Mang.ServiceBase.pdb

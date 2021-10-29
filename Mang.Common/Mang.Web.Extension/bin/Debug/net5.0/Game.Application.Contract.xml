@@ -1,0 +1,1844 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.Application.Contract</name>
+    </assembly>
+    <members>
+        <member name="T:Game.Application.Contract.Config.Items.CreateUpdateItemDto">
+            <summary>
+            创建任务项参数
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Config.Items.IItemService">
+            <summary>
+            任务项配置服务
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.Config.Items.IItemService.CreateAsync(Game.Application.Contract.Config.Items.CreateUpdateItemDto)">
+            <summary>
+            创建任务项配置
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Config.Items.IItemService.UpdateAsync(System.String,Game.Application.Contract.Config.Items.CreateUpdateItemDto)">
+            <summary>
+            修改任务项配置
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Config.Items.IItemService.DeleteAsync(System.String)">
+            <summary>
+            删除任务项配置
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.ICrudService`5">
+            <summary>
+            基础审计服务接口
+            </summary>
+            <typeparam name="TDto"></typeparam>
+            <typeparam name="TListDto"></typeparam>
+            <typeparam name="TGetListInput"></typeparam>
+            <typeparam name="TCreateInput"></typeparam>
+            <typeparam name="TUpdateInput"></typeparam>
+        </member>
+        <member name="M:Game.Application.Contract.ICrudService`5.CreateAsync(`3)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.ICrudService`5.UpdateAsync(System.Int32,`4)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.ICrudService`5.DeleteAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.IReadService`3">
+            <summary>
+            审计读取服务接口
+            </summary>
+            <typeparam name="TDto"></typeparam>
+            <typeparam name="TListDto"></typeparam>
+            <typeparam name="TGetListInput"></typeparam>
+        </member>
+        <member name="M:Game.Application.Contract.IReadService`3.GetAsync(System.Int32)">
+            <summary>
+            获取单条
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.IReadService`3.GetAsync(`2)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.IService">
+            <summary>
+            服务接口
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Actives.ActiveListDto">
+            <summary>
+            活跃趋势列表数据
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.DayActiveCount">
+            <summary>
+            日活跃
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.WeekActiveCount">
+            <summary>
+            周活跃
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.MonthActiveCount">
+            <summary>
+            月活跃
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.StartCount">
+            <summary>
+            启动次数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.AverageStartCount">
+            <summary>
+            平均启动次数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.AverageOnlineSpan">
+            <summary>
+            平均在线时长
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.ACU">
+            <summary>
+            统计周期内平均同时在线人数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.PCU">
+            <summary>
+            统计周期内最高在线人数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.DMAU">
+            <summary>
+            统计当日的日活设备|账号数与最近30天（包括统计当日）活跃设备|账号数的比值
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.ActiveListDto.DMAAU">
+            <summary>
+            月均活跃天数 DAU/MAU*30
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Actives.GetActiveListDto">
+            <summary>
+            获取活跃趋势列表参数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.ObjectCategory">
+            <summary>
+            对象选择
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.GameLine">
+            <summary>
+            游戏线
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.Game">
+            <summary>
+            游戏名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.Channel">
+            <summary>
+            渠道名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Actives.GetActiveListDto.UserCategory">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Actives.IActiveService">
+            <summary>
+            活跃趋势服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Actives.IActiveService.GetAsync(Game.Application.Contract.Operation.Actives.GetActiveListDto)">
+            <summary>
+            获取活跃趋势分页列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Actives.IActiveService.GetStreamAsync(Game.Application.Contract.Operation.Actives.GetActiveListDto)">
+            <summary>
+            导出功能，返回文件流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Generals.GeneralListDto">
+            <summary>
+            应用概况列表
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.NewMobileCount">
+            <summary>
+            新增设备
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.NewIpCount">
+            <summary>
+            新增IP
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.NewUserCount">
+            <summary>
+            新增用户
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.ActiveMobileCount">
+            <summary>
+            活跃设备
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.ActiveUserCount">
+            <summary>
+            活跃用户
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.AverageOnlineSpan">
+            <summary>
+            平均在线时长
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.IncomeTotal">
+            <summary>
+            广告总收入
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.SecondDayUserRetention">
+            <summary>
+            新增次留
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.ThirdDayUserRetention">
+            <summary>
+            新增3留
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.SeventhDayUserRetention">
+            <summary>
+            新增7留
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.FifteenthDayUserRetention">
+            <summary>
+            新增15留
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GeneralListDto.ThirtiethDayUserRetention">
+            <summary>
+            新增30留
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Generals.GetGeneralListDto">
+            <summary>
+            查询应用概况条件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GetGeneralListDto.GameLine">
+            <summary>
+            游戏线
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GetGeneralListDto.Game">
+            <summary>
+            游戏名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GetGeneralListDto.Channel">
+            <summary>
+            渠道名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GetGeneralListDto.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Generals.GetGeneralListDto.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Generals.IGeneralService">
+            <summary>
+            应用概况服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Generals.IGeneralService.GetAsync(Game.Application.Contract.Operation.Generals.GetGeneralListDto)">
+            <summary>
+            获取应用概况分页列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Generals.IGeneralService.GetStreamAsync(Game.Application.Contract.Operation.Generals.GetGeneralListDto)">
+            <summary>
+            导出功能，返回文件流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Retentions.GetRetentionListDto">
+            <summary>
+            查询应用概况条件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.GetRetentionListDto.ObjectCategory">
+            <summary>
+            对象选择
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.GetRetentionListDto.GameLine">
+            <summary>
+            游戏线
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.GetRetentionListDto.Game">
+            <summary>
+            游戏名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.GetRetentionListDto.Channel">
+            <summary>
+            渠道名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.GetRetentionListDto.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.GetRetentionListDto.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Retentions.RetentionListDto">
+            <summary>
+            留存统计列表
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.SecondDayRetention">
+            <summary>
+            次日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.ThirdDayRetention">
+            <summary>
+            3日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.FourthDayRetention">
+            <summary>
+            4日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.FifthDayRetention">
+            <summary>
+            5日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.SixthDayRetention">
+            <summary>
+            6日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.SeventhDayRetention">
+            <summary>
+            7日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.EighthDayRetention">
+            <summary>
+            8日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.FifteenthDayRetention">
+            <summary>
+            15日留存
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Operation.Retentions.RetentionListDto.ThirtiethDayRetention">
+            <summary>
+            30日留存
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Operation.Retentions.IRetentionService">
+            <summary>
+            留存统计服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Retentions.IRetentionService.GetNewsAsync(Game.Application.Contract.Operation.Retentions.GetRetentionListDto)">
+            <summary>
+            获取新增留存统计分页列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Retentions.IRetentionService.GetActivesAsync(Game.Application.Contract.Operation.Retentions.GetRetentionListDto)">
+            <summary>
+            获取活跃留存统计分页列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Retentions.IRetentionService.GetNewsStreamAsync(Game.Application.Contract.Operation.Retentions.GetRetentionListDto)">
+            <summary>
+            导出新增列表功能，返回文件流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Operation.Retentions.IRetentionService.GetActivesStreamAsync(Game.Application.Contract.Operation.Retentions.GetRetentionListDto)">
+            <summary>
+            导出活跃列表功能，返回文件流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.OperationPermission">
+            <summary>
+            权限定义
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.OperationPermission.General">
+            <summary>
+            应用概况
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.General.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.General.Export">
+            <summary>
+            设置启用/禁用
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.OperationPermission.Active">
+            <summary>
+            活跃趋势
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Active.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Active.Export">
+            <summary>
+            设置启用/禁用
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.OperationPermission.Retention">
+            <summary>
+            留存统计
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Retention.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Retention.Export">
+            <summary>
+            设置启用/禁用
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.OperationPermission.Wastage">
+            <summary>
+            流失统计
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Wastage.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermission.Wastage.Export">
+            <summary>
+            设置启用/禁用
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.OperationPermissionProvider">
+            <summary>
+            权限定义映射
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermissionProvider.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.OperationPermissionProvider.Permissions">
+            <summary>
+            权限字典
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Wastages.EverydayWastageListDto">
+            <summary>
+            每日流失
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.EverydayWastageListDto.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.EverydayWastageListDto.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.EverydayWastageListDto.Rate">
+            <summary>
+            流失率
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.EverydayWastageListDto.Backflow">
+            <summary>
+            回流数量
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Wastages.GetWastageListDto">
+            <summary>
+            获取列表条件参数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.GetWastageListDto.ObjectCategory">
+            <summary>
+            对象选择
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.GetWastageListDto.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.GetWastageListDto.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.GetWastageListDto.GameLine">
+            <summary>
+            游戏线
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.GetWastageListDto.Game">
+            <summary>
+            游戏名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.GetWastageListDto.Channel">
+            <summary>
+            渠道名
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Wastages.LevelWastageListDto">
+            <summary>
+            流失VIP等级
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.ZeroLevelCount">
+            <summary>
+            零级Vip流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.ZeroLevelRate">
+            <summary>
+            零级Vip流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.OneLevelCount">
+            <summary>
+            一级Vip流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.OneLevelRate">
+            <summary>
+            一级Vip流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.TwoLevelCount">
+            <summary>
+            二级Vip流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.TwoLevelRate">
+            <summary>
+            二级Vip流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.ThreeLevelCount">
+            <summary>
+            三级Vip流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.ThreeLevelRate">
+            <summary>
+            三级Vip流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.FourLevelCount">
+            <summary>
+            四级Vip流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.FourLevelRate">
+            <summary>
+            四级Vip流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.FiveLevelCount">
+            <summary>
+            五级Vip流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LevelWastageListDto.FiveLevelRate">
+            <summary>
+            五级Vip流失占比
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Wastages.LifeCycleWastageListDto">
+            <summary>
+            流失生命周期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LifeCycleWastageListDto.Days">
+            <summary>
+            游戏天数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LifeCycleWastageListDto.Count">
+            <summary>
+            流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LifeCycleWastageListDto.Rate">
+            <summary>
+            流失率
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto">
+            <summary>
+            流失前登次
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.OnceCount">
+            <summary>
+            登录1次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.OnceRate">
+            <summary>
+            登录1次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.TwiceCount">
+            <summary>
+            登录2次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.TwiceRate">
+            <summary>
+            登录2次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.ThreeTimesCount">
+            <summary>
+            登录3次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.ThreeTimesRate">
+            <summary>
+            登录3次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.FourTimesCount">
+            <summary>
+            登录4次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.FourTimesRate">
+            <summary>
+            登录4次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.FiveTimesCount">
+            <summary>
+            登录5次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.FiveTimesRate">
+            <summary>
+            登录5次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.SixToTenTimesCount">
+            <summary>
+            登录6到10次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.SixToTenTimesRate">
+            <summary>
+            登录6到10次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.ElevenToTwentyTimesCount">
+            <summary>
+            登录11到20次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.ElevenToTwentyTimesRate">
+            <summary>
+            登录11到20次流失占比
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.MoreTharTwentyOneTimesCount">
+            <summary>
+            登录超过21次流失数量
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Wastages.LoginTimesWastageListDto.MoreTharTwentyOneTimesRate">
+            <summary>
+            登录超过21次流失占比
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Wastages.IWastageService">
+            <summary>
+            流失统计服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Wastages.IWastageService.GetEverydaysAsync(Game.Application.Contract.System.Wastages.GetWastageListDto)">
+            <summary>
+            每日流失
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Wastages.IWastageService.GetLevelsAsync(Game.Application.Contract.System.Wastages.GetWastageListDto)">
+            <summary>
+            流失VIP等级
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Wastages.IWastageService.GetLoginTimesAsync(Game.Application.Contract.System.Wastages.GetWastageListDto)">
+            <summary>
+            流失前登次
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Wastages.IWastageService.GetEverydaysStreamAsync(Game.Application.Contract.System.Wastages.GetWastageListDto)">
+            <summary>
+            导出每日流失功能，返回数据流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Wastages.IWastageService.GetLevelsStreamAsync(Game.Application.Contract.System.Wastages.GetWastageListDto)">
+            <summary>
+            导出流失VIP等级功能，返回数据流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Wastages.IWastageService.GetLoginTimesStreamAsync(Game.Application.Contract.System.Wastages.GetWastageListDto)">
+            <summary>
+            导出流失前登次功能，返回数据流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.Files.Dtos.FileDto">
+            <summary>
+            文件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Files.Dtos.FileDto.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Files.Dtos.FileDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Files.IFileService">
+            <summary>
+            文件服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Files.IFileService.UploadAsync(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            上传
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.Logs.GetLogListDto">
+            <summary>
+            获取日志列表条件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.BeginTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.RequestUrl">
+            <summary>
+            请求接口
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.Application">
+            <summary>
+            解决方案名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.TraceId">
+            <summary>
+            请求链路ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.Level">
+            <summary>
+            请求链路ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.UserName">
+            <summary>
+            请求链路ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.GetLogListDto.Message">
+            <summary>
+            日志信息
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Logs.LogDto">
+            <summary>
+            日志详情
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Logs.LogListDto">
+            <summary>
+            日志列表
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.Application">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.TraceId">
+            <summary>
+            guid链路
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.Level">
+            <summary>
+            日志级别
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.UserName">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.Message">
+            <summary>
+            日志信息
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.RequestUrl">
+            <summary>
+            请求地址
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.Action">
+            <summary>
+            具体action
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.CallSite">
+            <summary>
+            日志记录路径
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.Ip">
+            <summary>
+            Ip地址
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.UserAgent">
+            <summary>
+            客户端代理
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Logs.LogListDto.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Logs.ILogService">
+            <summary>
+            系统日志服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Logs.ILogService.GetLevelDictionaryAsync">
+            <summary>
+            获取日志等级字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.Menus.BindPermissionDto">
+            <summary>
+            绑定权限业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.BindPermissionDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Menus.CreateUpdateMenuDto">
+            <summary>
+            创建菜单业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.Component">
+            <summary>
+            视图组件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.CreateUpdateMenuDto.Sort">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Menus.GetMenuListDto">
+            <summary>
+            获取菜单列表业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.GetMenuListDto.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Menus.MenuDto">
+            <summary>
+            菜单业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuDto.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Menus.MenuListDto">
+            <summary>
+            菜单列表业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.PermissionName">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Redirect">
+            <summary>
+            重定向
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Menus.MenuListDto.Children">
+            <summary>
+            子级菜单
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Menus.IMenuService">
+            <summary>
+            菜单服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Menus.IMenuService.GetAsync">
+            <summary>
+            获取菜单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Menus.IMenuService.GetAsync(System.Int32)">
+            <summary>
+            获取菜单详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Menus.IMenuService.CreateAsync(Game.Application.Contract.System.Menus.CreateUpdateMenuDto)">
+            <summary>
+            创建菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Menus.IMenuService.UpdateAsync(System.Int32,Game.Application.Contract.System.Menus.CreateUpdateMenuDto)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Menus.IMenuService.SetIsEnableAsync(Game.Public.Dto.SetIsEnableDto)">
+            <summary>
+            设置启用/禁用状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Menus.IMenuService.DeleteAsync(System.Int32)">
+            <summary>
+            删除菜单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.Permissions.MenuPermissionDto">
+            <summary>
+            菜单权限
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.MenuPermissionDto.Module">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.MenuPermissionDto.Permissions">
+            <summary>
+            菜单权限
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Permissions.PermissionModuleDto">
+            <summary>
+            按模块权限业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.PermissionModuleDto.Module">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.PermissionModuleDto.Permissions">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Permissions.PermissionDto">
+            <summary>
+            权限业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.PermissionDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.PermissionDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.PermissionDto.DisplayName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Permissions.PermissionDto.Children">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Permissions.IPermissionService">
+            <summary>
+            权限服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Permissions.IPermissionService.GetAsync">
+            <summary>
+            获取权限数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Permissions.IPermissionService.GetMenuPermissionAsync">
+            <summary>
+            获取菜单类型权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Permissions.IPermissionService.GetAsync(System.Int32)">
+            <summary>
+            根据用户ID获取权限
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.AssignPermissionDto">
+            <summary>
+            分配角色权限业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.AssignPermissionDto.Id">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.AssignPermissionDto.PermissionIds">
+            <summary>
+            权限ID集合
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.CreateUpdateRoleDto">
+            <summary>
+            创建角色业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.CreateUpdateRoleDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.CreateUpdateRoleDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.GetRoleListDto">
+            <summary>
+            获取角色列表业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.GetRoleListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.RoleDto">
+            <summary>
+            角色业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RoleDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RoleDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.RoleListDto">
+            <summary>
+            角色列表业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RoleListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RoleListDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.RolePermissionDto">
+            <summary>
+            角色权限业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RolePermissionDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RolePermissionDto.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RolePermissionDto.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Roles.RolePermissionDto.DisplayName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Roles.IRoleService">
+            <summary>
+            角色服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Roles.IRoleService.GetDictionaryAsync">
+            <summary>
+            获取角色字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Roles.IRoleService.GetPermissionAsync(System.Int32)">
+            <summary>
+            获取角色权限ID
+            </summary>
+            <param name="id">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Roles.IRoleService.AssignPermissionAsync(Game.Application.Contract.System.Roles.AssignPermissionDto)">
+            <summary>
+            分配角色权限
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:Game.Application.Contract.System.Roles.IRoleService.SetIsEnableAsync(Game.Public.Dto.SetIsEnableDto)">
+            <summary>
+            设置用户状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.System.SystemPermission">
+            <summary>
+            权限定义
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.SystemPermission.User">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.Create">
+            <summary>
+            创建
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.Edit">
+            <summary>
+            编辑
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.AssignRole">
+            <summary>
+            分配角色
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.ResetPassword">
+            <summary>
+            重置密码
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.User.SetIsEnable">
+            <summary>
+            设置启用/禁用
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.SystemPermission.Role">
+            <summary>
+            角色权限
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Role.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Role.Create">
+            <summary>
+            创建
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Role.Edit">
+            <summary>
+            编辑
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Role.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Role.AssignPermission">
+            <summary>
+            分配权限
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Role.SetEnable">
+            <summary>
+            设置启用/禁用
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.SystemPermission.Menu">
+            <summary>
+            菜单权限
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Menu.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Menu.Create">
+            <summary>
+            创建
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Menu.Edit">
+            <summary>
+            编辑
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Menu.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Menu.SetIsEnable">
+            <summary>
+            设置状态
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Menu.BindPermission">
+            <summary>
+            绑定权限
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.SystemPermission.Log">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermission.Log.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.SystemPermissionProvider">
+            <summary>
+            权限定义映射
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermissionProvider.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.System.SystemPermissionProvider.Permissions">
+            <summary>
+            权限字典
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.AssignRoleDto">
+            <summary>
+            分配角色业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.AssignRoleDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.AssignRoleDto.RoleIds">
+            <summary>
+            角色ID集合
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.CreateUpdateUserDto">
+            <summary>
+            创建用户业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.CreateUpdateUserDto.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.CreateUpdateUserDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.CreateUpdateUserDto.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.CreateUpdateUserDto.RoleIds">
+            <summary>
+            角色ID集合
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.CreateUpdateUserDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.GetAdminUserListDto">
+            <summary>
+            获取用户业务实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.GetAdminUserListDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.GetAdminUserListDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.GetAdminUserListDto.IsEnable">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.ResetPasswordDto">
+            <summary>
+            重置密码参数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.ResetPasswordDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.ResetPasswordDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.UserDto">
+            <summary>
+            用户实体
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserDto.Email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserDto.RoleIds">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.UserListDto">
+            <summary>
+            用户列表
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserListDto.Name">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserListDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserListDto.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserListDto.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.System.Users.UserListDto.Roles">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.System.Users.IUserService">
+            <summary>
+            用户服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.System.Users.IUserService.AssignRoleAsync(Game.Application.Contract.System.Users.AssignRoleDto)">
+            <summary>
+            分配角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Users.IUserService.ResetPasswordAsync(Game.Application.Contract.System.Users.ResetPasswordDto)">
+            <summary>
+            重置用户密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.System.Users.IUserService.SetIsEnableAsync(Game.Public.Dto.SetIsEnableDto)">
+            <summary>
+            设置用户状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.Account.AdminAccounts.AccountDto">
+            <summary>
+            登录用户数据
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto">
+            <summary>
+            用户菜单
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.Path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.Component">
+            <summary>
+            页面组件
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.AccountMenuDto.Children">
+            <summary>
+            子级菜单
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Account.AdminAccounts.LoginDto">
+            <summary>
+            登录请求参数
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.LoginDto.Identifer">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.LoginDto.Credential">
+            <summary>
+            登录凭据
+            </summary>
+        </member>
+        <member name="P:Game.Application.Contract.Account.AdminAccounts.LoginDto.Type">
+            <summary>
+            登录方式
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Account.AdminAccounts.LoginType">
+            <summary>
+            登录方式
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.Account.AdminAccounts.LoginType.Account">
+            <summary>
+            账号登录
+            </summary>
+        </member>
+        <member name="F:Game.Application.Contract.Account.AdminAccounts.LoginType.Phone">
+            <summary>
+            手机号登录
+            </summary>
+        </member>
+        <member name="T:Game.Application.Contract.Account.AdminAccounts.IAccountService">
+            <summary>
+            管理员用户服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.SendCaptchaAsync(System.String)">
+            <summary>
+            发送登录验证码
+            </summary>
+            <param name="phone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.LoginAsync(Game.Application.Contract.Account.AdminAccounts.LoginDto)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.GetUserAsync">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.GetMenuAsync">
+            <summary>
+            获取用户菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.GetPermissionAsync">
+            <summary>
+            获取用户操作权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.CheckPermissionAsync(System.Int32,System.String)">
+            <summary>
+            校验账号权限
+            </summary>
+            <param name="userId"></param>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Application.Contract.Account.AdminAccounts.IAccountService.LogoutAsync">
+            <summary>
+            退出登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Application.Contract.Tasks.ITaskService">
+            <summary>
+            任务服务接口
+            </summary>
+        </member>
+        <member name="M:Game.Application.Contract.Tasks.ITaskService.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mang.MiniProgram.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Mang.MiniProgram.Api.Controllers.AccountController">
+            <summary>
+            账号服务
+            </summary>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.AccountController.#ctor(Mang.Application.Contract.Users.IUserService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="userService"></param>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.AccountController.LoginAsync(Mang.Application.Contract.Users.LoginUserDto)">
+            <summary>
+            登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.MiniProgram.Api.Controllers.NoteController">
+            <summary>
+            纸条服务
+            </summary>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.NoteController.#ctor(Mang.Application.Contract.Notes.INoteService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.NoteController.CreateAsync(Mang.Application.Contract.Notes.Dtos.CreateNoteDto)">
+            <summary>
+            投放一张纸条
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.NoteController.GetAsync(Game.Domain.Shared.Gender)">
+            <summary>
+            获取一张纸条
+            </summary>
+            <param name="gender">性别</param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.MiniProgram.Api.Controllers.UserController">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.UserController.#ctor(Mang.Application.Contract.Users.IUserService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.UserController.RegisterAsync(Mang.Application.Contract.Users.RegisterUserDto)">
+            <summary>
+            完成用户注册
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mang.MiniProgram.Api.Controllers.UserSharedController">
+            <summary>
+            用户分享服务
+            </summary>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.UserSharedController.#ctor(Mang.Application.Contract.UserShareds.IUserSharedService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.UserSharedController.CreateAsync(Mang.Application.Contract.UserShareds.CreateUserSharedDto)">
+            <summary>
+            点击分享链接回调
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
