@@ -34,24 +34,51 @@ namespace Mang.MiniProgram.Api.Controllers
         /// <returns></returns>
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<JsonResultModel<string>> LoginAsync([FromBody] LoginUserDto input)
+        public async Task<JsonResultModel<string>> LoginAsync([FromBody] LoginDto input)
         {
-            var loginUser = await _userService.LoginAsync(input.Code);
+            var loginUser = await _userService.LoginAsync(input);
             string token = string.Empty;
             if (loginUser is { Id: > 0 })
             {
                 List<Claim> claims = new List<Claim>
                 {
-                    // new(ClaimTypes.Sid, loginUser.Id.ToString()),
-                    // new(ClaimTypes.Name, loginUser.NickName),
-                    // new(ClaimTypes.Actor, loginUser.AvatarUrl),
-                    // new(ClaimTypes.MobilePhone, loginUser.Phone),
-                    // new("IsVip", loginUser.IsVip.ToString()),
-                    new(ClaimTypes.Sid, "1"),
-                    new(ClaimTypes.Name, "李亚奇"),
+                    new(ClaimTypes.Sid, loginUser.Id.ToString()),
+                    new(ClaimTypes.Name, loginUser.NickName),
                     new(ClaimTypes.Actor, loginUser.AvatarUrl),
                     new(ClaimTypes.MobilePhone, loginUser.Phone),
-                    new("IsVip", loginUser.IsVip.ToString())
+                    new("IsFinishRegister", loginUser.IsVip.ToString())
+                };
+                //查询出用户对应的权限角色  
+                token = JWTService.GetToken(claims);
+            }
+
+            return new JsonResultModel<string>
+            {
+                status = true,
+                code = token.IsNullOrWhiteSpace() ? HttpStatusCode.LoginFail : HttpStatusCode.OK,
+                data = token
+            };
+        }
+
+        /// <summary>
+        /// 完成用户注册
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost("complete")]
+        public async Task<JsonResultModel<string>> CompleteAsync([FromBody] CompleteUserDto input)
+        {
+            var loginUser = await _userService.CompleteAsync(input);
+            string token = string.Empty;
+            if (loginUser is { Id: > 0 })
+            {
+                List<Claim> claims = new List<Claim>
+                {
+                    new(ClaimTypes.Sid, loginUser.Id.ToString()),
+                    new(ClaimTypes.Name, loginUser.NickName),
+                    new(ClaimTypes.Actor, loginUser.AvatarUrl),
+                    new(ClaimTypes.MobilePhone, loginUser.Phone),
+                    new("IsFinishRegister", loginUser.IsVip.ToString())
                 };
                 //查询出用户对应的权限角色  
                 token = JWTService.GetToken(claims);

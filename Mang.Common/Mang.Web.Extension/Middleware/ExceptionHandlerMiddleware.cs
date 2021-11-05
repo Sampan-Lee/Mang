@@ -41,7 +41,7 @@ namespace Mang.Web.Extension.Middleware
         private static async Task WriteExceptionAsync(HttpContext context, Exception e)
         {
             context.Response.StatusCode = e is UnauthorizedAccessException
-                ? HttpStatusCode.Unauthorized
+                ? HttpStatusCode.UnAuthorized
                 : HttpStatusCode.BadRequest;
 
             context.Response.ContentType = "application/json";

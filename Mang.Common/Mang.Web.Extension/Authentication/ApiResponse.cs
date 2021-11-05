@@ -17,14 +17,14 @@ namespace Mang.Web.Extension.Authentication
 
             switch (StatusCode)
             {
-                case HttpStatusCode.Unauthorized:
+                case HttpStatusCode.UnAuthorized:
                 {
                     value = "未登录!";
                 }
                     break;
                 case HttpStatusCode.Forbidden:
                 {
-                    value = "很抱歉，您无权访问该接口!";
+                    value = "先填写个人信息!";
                 }
                     break;
                 case HttpStatusCode.ServerError:

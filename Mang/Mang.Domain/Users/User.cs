@@ -1,5 +1,4 @@
 using System;
-using FreeSql.DataAnnotations;
 using Game.Domain.Shared;
 
 namespace Mang.Domain.Users
@@ -38,6 +37,16 @@ namespace Mang.Domain.Users
         /// 头像地址
         /// </summary>
         public string AvatarUrl { get; set; }
+
+        /// <summary>
+        /// 年龄段ID
+        /// </summary>
+        public int AgeBracketId { get; set; }
+
+        /// <summary>
+        /// 兴趣/爱好
+        /// </summary>
+        public string Hobby { get; set; }
 
         /// <summary>
         /// 完成注册 0：未完成；1：已完成

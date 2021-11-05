@@ -5,7 +5,7 @@ namespace Mang.Application.Contract.Users
     /// <summary>
     /// 登录用户
     /// </summary>
-    public class LoginUserDto
+    public class LoginDto
     {
         /// <summary>
         /// 授权码

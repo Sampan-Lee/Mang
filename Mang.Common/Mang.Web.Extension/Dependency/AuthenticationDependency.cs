@@ -39,8 +39,6 @@ namespace Mang.Web.Extension.Dependency
                     options.AddPolicy("FinishRegister",
                         policy => policy.RequireClaim("IsFinishRegister", "true")
                     );
-                    options.AddPolicy("IsVip",
-                        policy => policy.RequireClaim("IsVip", "true"));
                 }
             );
             services.AddSingleton<IAuthorizationHandler, PermissionAuthorizationHandler>();

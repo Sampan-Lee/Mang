@@ -11,15 +11,15 @@ namespace Mang.Application.Contract.Users
         /// <summary>
         /// 登录
         /// </summary>
-        /// <param name="code"></param>
+        /// <param name="input"></param>
         /// <returns></returns>
-        Task<UserLoginDto> LoginAsync(string code);
+        Task<UserLoginDto> LoginAsync(LoginDto input);
 
         /// <summary>
-        /// 完成用户注册
+        /// 补充用户信息
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<bool> RegisterAsync(RegisterUserDto input);
+        Task<UserLoginDto> CompleteAsync(CompleteUserDto input);
     }
 }

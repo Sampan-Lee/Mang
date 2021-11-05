@@ -5,7 +5,7 @@ namespace Mang.Application.Contract.Users
     /// <summary>
     /// 用户完成注册参数
     /// </summary>
-    public class RegisterUserDto
+    public class CompleteUserDto
     {
         /// <summary>
         /// 微信号
@@ -18,9 +18,9 @@ namespace Mang.Application.Contract.Users
         public Gender Gender { get; set; }
 
         /// <summary>
-        /// 年龄
+        /// 年龄段ID
         /// </summary>
-        public string Age { get; set; }
+        public int AgeBracketId { get; set; }
 
         /// <summary>
         /// 兴趣/爱好

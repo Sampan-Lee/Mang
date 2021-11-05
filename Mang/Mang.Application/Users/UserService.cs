@@ -26,51 +26,61 @@ namespace Mang.Application.Users
         /// <summary>
         /// 登录
         /// </summary>
-        /// <param name="code"></param>
+        /// <param name="input"></param>
         /// <returns></returns>
-        public async Task<UserLoginDto> LoginAsync(string code)
+        public async Task<UserLoginDto> LoginAsync(LoginDto input)
         {
-            var userLoginDto = new UserLoginDto();
+            var session = await _miniProgramAuth.CodeToSession(input.Code);
 
-            var session = await _miniProgramAuth.CodeToSession(code);
             var user = await _repository.Where(a => a.OpenId == session.openid).ToOneAsync();
+            user.NickName = input.NickName;
+            user.AvatarUrl = input.AvatarUrl;
+            user.CreateTime = DateTime.Now;
+            user.UpdateTime = DateTime.Now;
+            user.LastLoginTime = DateTime.Now;
 
-            if (user == null)
+            await _repository.InsertOrUpdateAsync(user);
+            var userLoginDto = new UserLoginDto
             {
-                user = new User
-                {
-                    OpenId = session.openid,
-                    IsFinishRegister = false,
-                    LastLoginTime = DateTime.Now
-                };
-                user = await _repository.InsertAsync(user);
-
-                userLoginDto.Id = user.Id;
-                userLoginDto.IsFinishRegister = false;
-            }
-            else
-            {
-                var userPermission = await _userPermissionRepository.Where(a => a.UserId == user.Id).ToOneAsync();
-                userLoginDto.Id = user.Id;
-                userLoginDto.NickName = user.NickName;
-                userLoginDto.AvatarUrl = user.AvatarUrl;
-                userLoginDto.Phone = user.Phone;
-                userLoginDto.IsVip = userPermission.IsVip;
-                userLoginDto.IsFinishRegister = user.IsFinishRegister;
-            }
+                Id = user.Id,
+                NickName = user.NickName,
+                AvatarUrl = user.AvatarUrl,
+                Phone = user.Phone,
+                IsFinishRegister = user.IsFinishRegister
+            };
 
             return userLoginDto;
         }
 
         /// <summary>
-        /// 
+        /// 补全用户信息
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
-        public Task<bool> RegisterAsync(RegisterUserDto input)
+        public async Task<UserLoginDto> CompleteAsync(CompleteUserDto input)
         {
-            throw new NotImplementedException();
+            var user = await _repository.GetAsync(CurrentUser.Id);
+
+            user.WechatNum = input.WechatNum;
+            user.Gender = input.Gender;
+            user.AgeBracketId = input.AgeBracketId;
+            user.Hobby = input.Hobby;
+            user.IsFinishRegister = true;
+            user.UpdateTime = DateTime.Now;
+            user.LastLoginTime = DateTime.Now;
+
+            await _repository.UpdateAsync(user);
+
+            var userLoginDto = new UserLoginDto
+            {
+                Id = user.Id,
+                NickName = user.NickName,
+                AvatarUrl = user.AvatarUrl,
+                Phone = user.Phone,
+                IsFinishRegister = user.IsFinishRegister
+            };
+
+            return userLoginDto;
         }
     }
 }

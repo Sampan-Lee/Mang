@@ -1,8 +1,8 @@
 using System.Linq;
 using System.Threading.Tasks;
+using Mang.Public.CurrentUser;
 using Mang.Web.Extension.Authentication;
 using Mang.Web.Extension.Model;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Http;
@@ -19,15 +19,19 @@ namespace Mang.Web.Extension.Permission
             {
                 context.Response.ContentType = "application/json";
                 await context.Response.WriteAsync(
-                    JsonConvert.SerializeObject(new ApiResponse(HttpStatusCode.Unauthorized).JsonResultModel));
+                    JsonConvert.SerializeObject(new ApiResponse(HttpStatusCode.UnAuthorized).JsonResultModel));
                 return;
             }
 
             if (authorizeResult.Forbidden)
             {
                 context.Response.ContentType = "application/json";
-                await context.Response.WriteAsync(
-                    JsonConvert.SerializeObject(new ApiResponse(HttpStatusCode.Forbidden).JsonResultModel));
+                if (!context.User.FindFinishRegister())
+                {
+                    await context.Response.WriteAsync(
+                        JsonConvert.SerializeObject(new ApiResponse(HttpStatusCode.Forbidden).JsonResultModel));
+                }
+
                 return;
             }
 

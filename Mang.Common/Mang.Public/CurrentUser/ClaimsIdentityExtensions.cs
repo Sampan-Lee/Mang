@@ -59,5 +59,12 @@ namespace Mang.Public.CurrentUser
 
             return userNameOrNull?.Value;
         }
+
+        public static bool FindFinishRegister(this ClaimsPrincipal principal)
+        {
+            Claim userNameOrNull = principal.FindFirst(c => c.Type == "IsFinishRegister");
+
+            return userNameOrNull.Value.ToBool();
+        }
     }
 }

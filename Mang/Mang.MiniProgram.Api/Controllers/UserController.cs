@@ -21,17 +21,5 @@ namespace Mang.MiniProgram.Api.Controllers
         {
             _service = service;
         }
-
-        /// <summary>
-        /// 完成用户注册
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        [HttpPost("register")]
-        public async Task<JsonResultModel<bool>> RegisterAsync([FromBody] RegisterUserDto input)
-        {
-            var result = await _service.RegisterAsync(input);
-            return result.ToSuccess();
-        }
     }
 }
