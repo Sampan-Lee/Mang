@@ -9,7 +9,7 @@ namespace Mang.Public.CurrentUser
         public static int FindUserId(this ClaimsPrincipal principal)
         {
             Claim userIdOrNull = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Sid);
-            if (userIdOrNull == null || userIdOrNull.Value.IsNullOrWhiteSpace())
+            if (userIdOrNull == null || string.IsNullOrWhiteSpace(userIdOrNull.Value))
             {
                 return 0;
             }
@@ -20,7 +20,7 @@ namespace Mang.Public.CurrentUser
         public static bool? IsAdminUser(this ClaimsPrincipal principal)
         {
             Claim isAdminOrNull = principal.Claims.FirstOrDefault(c => c.Type == GameClaimTypes.IsAdmin);
-            if (isAdminOrNull == null || isAdminOrNull.Value.IsNullOrWhiteSpace())
+            if (isAdminOrNull == null || string.IsNullOrWhiteSpace(isAdminOrNull.Value))
             {
                 return null;
             }
@@ -31,7 +31,7 @@ namespace Mang.Public.CurrentUser
         public static bool? IsSuperAdmin(this ClaimsPrincipal principal)
         {
             Claim isAdminOrNull = principal.Claims.FirstOrDefault(c => c.Type == GameClaimTypes.IsSuperAdmin);
-            if (isAdminOrNull == null || isAdminOrNull.Value.IsNullOrWhiteSpace())
+            if (isAdminOrNull == null || string.IsNullOrWhiteSpace(isAdminOrNull.Value))
             {
                 return null;
             }
@@ -62,7 +62,7 @@ namespace Mang.Public.CurrentUser
 
         public static bool FindFinishRegister(this ClaimsPrincipal principal)
         {
-            Claim userNameOrNull = principal.FindFirst(c => c.Type == "IsFinishRegister");
+            Claim userNameOrNull = principal.FindFirst(c => c.Type == "FinishRegister");
 
             return userNameOrNull.Value.ToBool();
         }

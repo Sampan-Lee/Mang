@@ -20,7 +20,6 @@
 /Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/Mang.Application.AssemblyInfoInputs.cache
 /Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/Mang.Application.AssemblyInfo.cs
 /Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/Mang.Application.csproj.CoreCompileInputs.cache
-/Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/Mang.Application.csproj.CopyComplete
 /Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/Mang.Application.dll
 /Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/ref/Mang.Application.dll
 /Users/sampan/WorkSpace/Mang/Mang/Mang.Application/obj/Debug/net5.0/Mang.Application.pdb

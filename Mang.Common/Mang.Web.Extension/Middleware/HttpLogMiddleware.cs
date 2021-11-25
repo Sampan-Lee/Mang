@@ -95,7 +95,7 @@ namespace Mang.Web.Extension.Middleware
             var request = context.Request;
             var sr = new StreamReader(request.Body);
             var bodyData = await sr.ReadToEndAsync();
-            bodyData = !bodyData.IsNullOrWhiteSpace() ? bodyData : "BodyData：bodyData";
+            bodyData = !string.IsNullOrWhiteSpace(bodyData) ? bodyData : "BodyData：bodyData";
             var content = $" QueryData：{request.Path + request.QueryString}\r\n {bodyData}";
 
             if (!string.IsNullOrEmpty(content))

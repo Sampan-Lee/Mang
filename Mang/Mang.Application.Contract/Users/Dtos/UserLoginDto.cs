@@ -23,13 +23,8 @@ namespace Mang.Application.Contract.Users
         public string Phone { get; set; }
 
         /// <summary>
-        /// 是否VIP
-        /// </summary>
-        public bool IsVip { get; set; }
-
-        /// <summary>
         /// 是否完成注册
         /// </summary>
-        public bool IsFinishRegister { get; set; }
+        public bool FinishRegister { get; set; }
     }
 }

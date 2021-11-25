@@ -7,7 +7,6 @@ using Mang.Application.Contract.System.Logs;
 using Mang.ServiceBase.Impl;
 using Mang.Infrastructure.Repository;
 using Mang.Public.Dto;
-using Mang.Public.Extension;
 using NLog;
 
 namespace Mang.Application.System
@@ -34,14 +33,14 @@ namespace Mang.Application.System
                             b on a.`TraceId`=b.`TraceId`")
                 .Include(a => a.User)
                 .Where(a => !string.IsNullOrWhiteSpace(a.TraceId))
-                .WhereIf(!input.RequestUrl.IsNullOrWhiteSpace(), a => a.RequestUrl.Contains(input.RequestUrl))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.RequestUrl), a => a.RequestUrl.Contains(input.RequestUrl))
                 .WhereIf(input.BeginTime.HasValue, a => a.CreateTime >= input.BeginTime.Value)
                 .WhereIf(input.EndTime.HasValue, a => a.CreateTime <= input.EndTime.Value)
-                .WhereIf(!input.Application.IsNullOrWhiteSpace(), a => a.Application.Contains(input.Application))
-                .WhereIf(!input.TraceId.IsNullOrWhiteSpace(), a => a.TraceId.Contains(input.TraceId))
-                .WhereIf(!input.Level.IsNullOrWhiteSpace(), a => a.Level == input.Level)
-                .WhereIf(!input.UserName.IsNullOrWhiteSpace(), a => a.User.Name.Contains(input.UserName))
-                .WhereIf(!input.Message.IsNullOrWhiteSpace(), a => a.Message.Contains(input.Message))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.Application), a => a.Application.Contains(input.Application))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.TraceId), a => a.TraceId.Contains(input.TraceId))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.Level), a => a.Level == input.Level)
+                .WhereIf(!string.IsNullOrWhiteSpace(input.UserName), a => a.User.Name.Contains(input.UserName))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.Message), a => a.Message.Contains(input.Message))
                 .OrderBy($"b.CreateTime {(input.Asc ? "asc" : "desc")}")
                 .OrderBy(a => a.Id);
         }

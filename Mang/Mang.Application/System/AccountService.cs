@@ -86,7 +86,7 @@ namespace Mang.Application.System
 
                 var cacheKey = SystemCacheKeyPrefixDefinition.LoginCaptcha + input.Identifer;
                 var captcha = await Cache.GetAsync(cacheKey);
-                ThrowIf(captcha.IsNullOrWhiteSpace(), new UnGetCaptchaException());
+                ThrowIf(string.IsNullOrWhiteSpace(captcha), new UnGetCaptchaException());
                 ThrowIf(captcha != input.Credential, new CaptchaWrongException());
             }
 

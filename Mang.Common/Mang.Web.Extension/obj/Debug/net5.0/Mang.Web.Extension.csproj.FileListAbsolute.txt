@@ -22,7 +22,6 @@
 /Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/Mang.Web.Extension.AssemblyInfoInputs.cache
 /Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/Mang.Web.Extension.AssemblyInfo.cs
 /Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/Mang.Web.Extension.csproj.CoreCompileInputs.cache
-/Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/Mang.Web.Extension.csproj.CopyComplete
 /Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/Mang.Web.Extension.dll
 /Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/ref/Mang.Web.Extension.dll
 /Users/sampan/WorkSpace/Mang/Mang.Common/Mang.Web.Extension/obj/Debug/net5.0/Mang.Web.Extension.pdb

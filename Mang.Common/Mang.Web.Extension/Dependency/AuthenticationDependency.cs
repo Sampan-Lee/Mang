@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using Mang.Application.Contract;
 using Mang.Public.Util;
 using Mang.Web.Extension.Permission;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -36,13 +37,11 @@ namespace Mang.Web.Extension.Dependency
         {
             services.AddAuthorization(options =>
                 {
-                    options.AddPolicy("FinishRegister",
-                        policy => policy.RequireClaim("IsFinishRegister", "true")
+                    options.AddPolicy(MiniProgramPermissionDefinition.FinishRegister,
+                        policy => policy.RequireClaim(MiniProgramPermissionDefinition.FinishRegister)
                     );
                 }
             );
-            services.AddSingleton<IAuthorizationHandler, PermissionAuthorizationHandler>();
-            services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
             services.AddSingleton<IAuthorizationMiddlewareResultHandler,
                 PermissionAuthorizationMiddlewareResultHandler>();
         }

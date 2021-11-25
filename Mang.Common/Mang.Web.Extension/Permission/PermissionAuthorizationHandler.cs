@@ -21,7 +21,7 @@ namespace Mang.Web.Extension.Permission
         {
             var userId = context.User.FindFirst(a => a.Type == JwtClaimTypes.Subject)?.Value;
 
-            if (!userId.IsNullOrWhiteSpace())
+            if (!string.IsNullOrWhiteSpace(userId))
             {
                 var isSuperAdmin = context.User.IsSuperAdmin();
                 if (isSuperAdmin.HasValue && isSuperAdmin.Value)

@@ -1,8 +1,5 @@
-﻿using System.Threading.Tasks;
-using Mang.Application.Contract.Users;
+﻿using Mang.Application.Contract.Users;
 using Mang.Web.Extension.BaseController;
-using Mang.Web.Extension.Model;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Mang.MiniProgram.Api.Controllers
 {

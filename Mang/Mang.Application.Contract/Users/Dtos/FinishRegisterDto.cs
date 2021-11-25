@@ -5,7 +5,7 @@ namespace Mang.Application.Contract.Users
     /// <summary>
     /// 用户完成注册参数
     /// </summary>
-    public class CompleteUserDto
+    public class FinishRegisterDto
     {
         /// <summary>
         /// 微信号

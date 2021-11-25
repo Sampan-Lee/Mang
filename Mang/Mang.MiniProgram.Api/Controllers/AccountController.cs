@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Mang.Application.Contract;
 using Mang.Application.Contract.Users;
-using Mang.Public.Extension;
 using Mang.Web.Extension.Authentication;
 using Mang.Web.Extension.BaseController;
 using Mang.Web.Extension.Model;
@@ -34,7 +34,7 @@ namespace Mang.MiniProgram.Api.Controllers
         /// <returns></returns>
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<JsonResultModel<string>> LoginAsync([FromBody] LoginDto input)
+        public async Task<string> LoginAsync([FromBody] LoginDto input)
         {
             var loginUser = await _userService.LoginAsync(input);
             string token = string.Empty;
@@ -46,18 +46,13 @@ namespace Mang.MiniProgram.Api.Controllers
                     new(ClaimTypes.Name, loginUser.NickName),
                     new(ClaimTypes.Actor, loginUser.AvatarUrl),
                     new(ClaimTypes.MobilePhone, loginUser.Phone),
-                    new("IsFinishRegister", loginUser.IsVip.ToString())
+                    new(MiniProgramPermissionDefinition.FinishRegister, loginUser.FinishRegister.ToString())
                 };
                 //查询出用户对应的权限角色  
                 token = JWTService.GetToken(claims);
             }
 
-            return new JsonResultModel<string>
-            {
-                status = true,
-                code = token.IsNullOrWhiteSpace() ? HttpStatusCode.LoginFail : HttpStatusCode.OK,
-                data = token
-            };
+            return token;
         }
 
         /// <summary>
@@ -66,9 +61,9 @@ namespace Mang.MiniProgram.Api.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost("complete")]
-        public async Task<JsonResultModel<string>> CompleteAsync([FromBody] CompleteUserDto input)
+        public async Task<string> CompleteAsync([FromBody] FinishRegisterDto input)
         {
-            var loginUser = await _userService.CompleteAsync(input);
+            var loginUser = await _userService.FinishRegisterAsync(input);
             string token = string.Empty;
             if (loginUser is { Id: > 0 })
             {
@@ -78,18 +73,13 @@ namespace Mang.MiniProgram.Api.Controllers
                     new(ClaimTypes.Name, loginUser.NickName),
                     new(ClaimTypes.Actor, loginUser.AvatarUrl),
                     new(ClaimTypes.MobilePhone, loginUser.Phone),
-                    new("IsFinishRegister", loginUser.IsVip.ToString())
+                    new(MiniProgramPermissionDefinition.FinishRegister, loginUser.FinishRegister.ToString())
                 };
                 //查询出用户对应的权限角色  
                 token = JWTService.GetToken(claims);
             }
 
-            return new JsonResultModel<string>
-            {
-                status = true,
-                code = token.IsNullOrWhiteSpace() ? HttpStatusCode.LoginFail : HttpStatusCode.OK,
-                data = token
-            };
+            return token;
         }
     }
 }

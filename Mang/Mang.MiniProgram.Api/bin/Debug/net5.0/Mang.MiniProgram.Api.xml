@@ -15,9 +15,16 @@
             </summary>
             <param name="userService"></param>
         </member>
-        <member name="M:Mang.MiniProgram.Api.Controllers.AccountController.LoginAsync(Mang.Application.Contract.Users.LoginUserDto)">
+        <member name="M:Mang.MiniProgram.Api.Controllers.AccountController.LoginAsync(Mang.Application.Contract.Users.LoginDto)">
             <summary>
             登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mang.MiniProgram.Api.Controllers.AccountController.CompleteAsync(Mang.Application.Contract.Users.FinishRegisterDto)">
+            <summary>
+            完成用户注册
             </summary>
             <param name="input"></param>
             <returns></returns>
@@ -57,13 +64,6 @@
             构造函数
             </summary>
             <param name="service"></param>
-        </member>
-        <member name="M:Mang.MiniProgram.Api.Controllers.UserController.RegisterAsync(Mang.Application.Contract.Users.RegisterUserDto)">
-            <summary>
-            完成用户注册
-            </summary>
-            <param name="input"></param>
-            <returns></returns>
         </member>
         <member name="T:Mang.MiniProgram.Api.Controllers.UserSharedController">
             <summary>

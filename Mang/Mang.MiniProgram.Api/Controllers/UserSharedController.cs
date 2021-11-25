@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Mang.Application.Contract.UserShareds;
 using Mang.Web.Extension.BaseController;
-using Mang.Web.Extension.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mang.MiniProgram.Api.Controllers
@@ -28,10 +27,9 @@ namespace Mang.MiniProgram.Api.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<JsonResultModel<bool>> CreateAsync([FromBody] CreateUserSharedDto input)
+        public async Task<bool> CreateAsync([FromBody] CreateUserSharedDto input)
         {
-            var result = await _service.CreateAsync(input);
-            return result.ToSuccess();
+            return await _service.CreateAsync(input);
         }
     }
 }

@@ -81,7 +81,7 @@ namespace Mang.ServiceBase.Impl
         /// <returns></returns>
         protected virtual ISelect<TEntity> ApplySorting(ISelect<TEntity> query, TGetListInput input)
         {
-            query.OrderByPropertyNameIf(!input.Sort.IsNullOrWhiteSpace(), input.Sort, input.Asc);
+            query.OrderByPropertyNameIf(!string.IsNullOrWhiteSpace(input.Sort), input.Sort, input.Asc);
 
             return query;
         }

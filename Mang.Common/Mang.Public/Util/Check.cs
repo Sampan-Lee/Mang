@@ -70,7 +70,7 @@ namespace Mang.Public.Util
             int maxLength = int.MaxValue,
             int minLength = 0)
         {
-            if (value.IsNullOrWhiteSpace())
+            if (string.IsNullOrWhiteSpace(value))
             {
                 throw new ArgumentException($"{parameterName} can not be null, empty or white space!", parameterName);
             }

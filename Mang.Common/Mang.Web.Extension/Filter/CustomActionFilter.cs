@@ -8,24 +8,26 @@ namespace Mang.Web.Extension.Filter
     /// <summary>
     /// 参数校验Filter
     /// </summary>
-    public class ArgumentValidateFilter : ActionFilterAttribute
+    public class CustomActionFilter : ActionFilterAttribute
     {
-        public override void OnResultExecuting(ResultExecutingContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
-            JsonResultModel<string> messageModel = new JsonResultModel<string>();
             if (!context.ModelState.IsValid)
             {
-                //new ValidationError(key, x.ErrorMessage)
+                JsonResultModel<string> messageModel = new JsonResultModel<string>();
                 var result = context.ModelState.Keys
                     .SelectMany(key => context.ModelState[key].Errors.Select(x => x.ErrorMessage))
                     .ToList();
                 messageModel.errorMsg = result.FirstOrDefault();
                 messageModel.code = HttpStatusCode.ArgumentError;
                 messageModel.status = false;
-                //messageModel.data = result.FirstOrDefault(); //string.Join("|", result);//目前统一转化成字符串显示
                 context.Result = new ObjectResult(messageModel);
             }
+        }
 
+        public override void OnResultExecuting(ResultExecutingContext context)
+        {
+            context.Result = new ObjectResult((context.Result as ObjectResult).Value.ToSuccess());
             base.OnResultExecuting(context);
         }
     }

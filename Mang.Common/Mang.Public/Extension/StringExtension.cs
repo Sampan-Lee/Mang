@@ -29,50 +29,7 @@ namespace Mang.Public.Extension
             return str?.Substring(0, 1).ToUpper() + str?.Substring(1);
         }
 
-        /// <summary>
-        /// 判断字段不为空
-        /// [null,""," "]
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        public static bool IsNullOrWhiteSpace(this string str)
-        {
-            return string.IsNullOrWhiteSpace(str);
-        }
-
-        /// <summary>
-        /// 判断字段不为空
-        /// [null,""]
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        public static bool IsNullOrEmpty(this string str)
-        {
-            return string.IsNullOrEmpty(str);
-        }
-
         #endregion
-
-        /// <summary>
-        /// 返回guid 
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        public static string AddGuid(this string str)
-        {
-            return str.IsNullOrWhiteSpace() ? Guid.NewGuid().ToString() : str;
-        }
-
-        /// <summary>
-        /// StringFormat
-        /// </summary>
-        /// <param name="str"></param>
-        /// <param name="items"></param>
-        /// <returns></returns>
-        public static string Format(this string str, params string[] items)
-        {
-            return string.Format(str, items);
-        }
 
         /// <summary>
         /// 汉子转拼音 首字母全称

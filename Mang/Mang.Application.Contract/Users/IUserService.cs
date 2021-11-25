@@ -20,6 +20,6 @@ namespace Mang.Application.Contract.Users
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<UserLoginDto> CompleteAsync(CompleteUserDto input);
+        Task<UserLoginDto> FinishRegisterAsync(FinishRegisterDto input);
     }
 }

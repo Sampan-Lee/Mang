@@ -53,7 +53,7 @@ namespace Mang.Web.Controllers
             return new JsonResultModel<string>
             {
                 status = true,
-                code = token.IsNullOrWhiteSpace() ? HttpStatusCode.LoginFail : HttpStatusCode.OK,
+                code = string.IsNullOrWhiteSpace(token) ? HttpStatusCode.LoginFail : HttpStatusCode.OK,
                 data = token
             };
         }

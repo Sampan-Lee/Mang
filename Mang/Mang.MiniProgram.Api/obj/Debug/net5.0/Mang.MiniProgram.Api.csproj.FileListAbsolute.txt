@@ -123,9 +123,9 @@
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/staticwebassets/Mang.MiniProgram.Api.StaticWebAssets.xml
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/scopedcss/bundle/Mang.MiniProgram.Api.styles.css
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/Mang.MiniProgram.Api.RazorTargetAssemblyInfo.cache
-/Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/Mang.MiniProgram.Api.csproj.CopyComplete
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/Mang.MiniProgram.Api.dll
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/ref/Mang.MiniProgram.Api.dll
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/Mang.MiniProgram.Api.pdb
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/Mang.MiniProgram.Api.genruntimeconfig.cache
 /Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/bin/Debug/net5.0/Mang.Domain.Shared.xml
+/Users/sampan/WorkSpace/Mang/Mang/Mang.MiniProgram.Api/obj/Debug/net5.0/Mang.MiniProgram.Api.csproj.CopyComplete

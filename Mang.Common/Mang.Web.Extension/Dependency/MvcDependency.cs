@@ -12,9 +12,9 @@ namespace Mang.Web.Extension.Dependency
         {
             services.AddControllersWithViews(options =>
                 {
-                    options.Filters.Add<ExceptionHandleFilter>(); //全局注册
-                    options.Filters.Add<ArgumentValidateFilter>(); //参数校验
                     options.Filters.Add<DuplicateSubmissionActionFilter>(); //重复提交
+                    options.Filters.Add<ExceptionHandleFilter>(); //异常处理
+                    options.Filters.Add<CustomActionFilter>(); //参数校验,自定义返回结果
                 })
                 .AddNewtonsoftJson(options =>
                 {

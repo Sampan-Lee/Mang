@@ -46,7 +46,7 @@ namespace Mang.Application.Users
                 NickName = user.NickName,
                 AvatarUrl = user.AvatarUrl,
                 Phone = user.Phone,
-                IsFinishRegister = user.IsFinishRegister
+                FinishRegister = user.IsFinishRegister
             };
 
             return userLoginDto;
@@ -57,7 +57,7 @@ namespace Mang.Application.Users
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public async Task<UserLoginDto> CompleteAsync(CompleteUserDto input)
+        public async Task<UserLoginDto> FinishRegisterAsync(FinishRegisterDto input)
         {
             var user = await _repository.GetAsync(CurrentUser.Id);
 
@@ -77,7 +77,7 @@ namespace Mang.Application.Users
                 NickName = user.NickName,
                 AvatarUrl = user.AvatarUrl,
                 Phone = user.Phone,
-                IsFinishRegister = user.IsFinishRegister
+                FinishRegister = user.IsFinishRegister
             };
 
             return userLoginDto;

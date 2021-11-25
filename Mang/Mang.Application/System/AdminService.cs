@@ -40,8 +40,8 @@ namespace Mang.Application.System
         {
             return Repository.Include(a => a.CreateUser)
                 .IncludeMany(a => a.Roles)
-                .WhereIf(!input.Name.IsNullOrWhiteSpace(), a => a.Name.Contains(input.Name))
-                .WhereIf(!input.Phone.IsNullOrWhiteSpace(), a => a.Phone.Contains(input.Phone))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.Name), a => a.Name.Contains(input.Name))
+                .WhereIf(!string.IsNullOrWhiteSpace(input.Phone), a => a.Phone.Contains(input.Phone))
                 .WhereIf(input.IsEnable.HasValue, a => a.IsEnable == input.IsEnable.Value);
         }
 

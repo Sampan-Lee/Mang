@@ -55,7 +55,7 @@ namespace Mang.Tasks
 
             List<Permission> insertModulePermissions = new List<Permission>();
             List<Permission> updateModulePermissions = new List<Permission>();
-            permissions.Where(a => a.ParentName.IsNullOrWhiteSpace()).ToList().ForEach(r =>
+            permissions.Where(a => string.IsNullOrWhiteSpace(a.ParentName)).ToList().ForEach(r =>
             {
                 var query = allPermissions.Where(u => u.Module == r.Module)
                     .Where(u => u.Name == r.Name)
@@ -90,7 +90,7 @@ namespace Mang.Tasks
             var allModulePermissions = await _permissionRepository.Where(a => !a.ParentId.HasValue).ToListAsync();
             List<Permission> insertMenuPermissions = new List<Permission>();
             List<Permission> updateMenuPermissions = new List<Permission>();
-            permissions.Where(a => !a.ParentName.IsNullOrWhiteSpace())
+            permissions.Where(a => !string.IsNullOrWhiteSpace(a.ParentName))
                 .Where(a => allModulePermissions.Exists(m => m.Name == a.ParentName))
                 .ToList()
                 .ForEach(r =>

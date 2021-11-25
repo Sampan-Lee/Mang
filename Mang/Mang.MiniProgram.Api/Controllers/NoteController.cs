@@ -3,7 +3,6 @@ using Game.Domain.Shared;
 using Mang.Application.Contract.Notes;
 using Mang.Application.Contract.Notes.Dtos;
 using Mang.Web.Extension.BaseController;
-using Mang.Web.Extension.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,10 +31,9 @@ namespace Mang.MiniProgram.Api.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<JsonResultModel<bool>> CreateAsync([FromBody] CreateNoteDto input)
+        public async Task<bool> CreateAsync([FromBody] CreateNoteDto input)
         {
-            var result = await _service.CreateAsync(input);
-            return result.ToSuccess();
+            return await _service.CreateAsync(input);
         }
 
         /// <summary>
@@ -45,10 +43,9 @@ namespace Mang.MiniProgram.Api.Controllers
         /// <returns></returns>
         [HttpGet]
         [AllowAnonymous]
-        public async Task<JsonResultModel<NoteDto>> GetAsync([FromQuery] Gender gender)
+        public async Task<NoteDto> GetAsync([FromQuery] Gender gender)
         {
-            var result = await _service.GetAsync(gender);
-            return result.ToSuccess();
+            return await _service.GetAsync(gender);
         }
     }
 }

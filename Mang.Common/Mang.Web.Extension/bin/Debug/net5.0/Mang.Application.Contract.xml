@@ -942,49 +942,49 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Mang.Application.Contract.Users.LoginUserDto">
-            <summary>
-            登录用户
-            </summary>
-        </member>
-        <member name="P:Mang.Application.Contract.Users.LoginUserDto.Code">
-            <summary>
-            授权码
-            </summary>
-        </member>
-        <member name="P:Mang.Application.Contract.Users.LoginUserDto.NickName">
-            <summary>
-            昵称
-            </summary>
-        </member>
-        <member name="P:Mang.Application.Contract.Users.LoginUserDto.AvatarUrl">
-            <summary>
-            头像地址
-            </summary>
-        </member>
-        <member name="T:Mang.Application.Contract.Users.RegisterUserDto">
+        <member name="T:Mang.Application.Contract.Users.FinishRegisterDto">
             <summary>
             用户完成注册参数
             </summary>
         </member>
-        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.WechatNum">
+        <member name="P:Mang.Application.Contract.Users.FinishRegisterDto.WechatNum">
             <summary>
             微信号
             </summary>
         </member>
-        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.Gender">
+        <member name="P:Mang.Application.Contract.Users.FinishRegisterDto.Gender">
             <summary>
             性别
             </summary>
         </member>
-        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.Age">
+        <member name="P:Mang.Application.Contract.Users.FinishRegisterDto.AgeBracketId">
             <summary>
-            年龄
+            年龄段ID
             </summary>
         </member>
-        <member name="P:Mang.Application.Contract.Users.RegisterUserDto.Hobby">
+        <member name="P:Mang.Application.Contract.Users.FinishRegisterDto.Hobby">
             <summary>
             兴趣/爱好
+            </summary>
+        </member>
+        <member name="T:Mang.Application.Contract.Users.LoginDto">
+            <summary>
+            登录用户
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.LoginDto.Code">
+            <summary>
+            授权码
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.LoginDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mang.Application.Contract.Users.LoginDto.AvatarUrl">
+            <summary>
+            头像地址
             </summary>
         </member>
         <member name="T:Mang.Application.Contract.Users.UserLoginDto">
@@ -1007,12 +1007,7 @@
             手机号
             </summary>
         </member>
-        <member name="P:Mang.Application.Contract.Users.UserLoginDto.IsVip">
-            <summary>
-            是否VIP
-            </summary>
-        </member>
-        <member name="P:Mang.Application.Contract.Users.UserLoginDto.IsFinishRegister">
+        <member name="P:Mang.Application.Contract.Users.UserLoginDto.FinishRegister">
             <summary>
             是否完成注册
             </summary>
@@ -1022,16 +1017,16 @@
             用户服务接口
             </summary>
         </member>
-        <member name="M:Mang.Application.Contract.Users.IUserService.LoginAsync(System.String)">
+        <member name="M:Mang.Application.Contract.Users.IUserService.LoginAsync(Mang.Application.Contract.Users.LoginDto)">
             <summary>
             登录
             </summary>
-            <param name="code"></param>
+            <param name="input"></param>
             <returns></returns>
         </member>
-        <member name="M:Mang.Application.Contract.Users.IUserService.RegisterAsync(Mang.Application.Contract.Users.RegisterUserDto)">
+        <member name="M:Mang.Application.Contract.Users.IUserService.FinishRegisterAsync(Mang.Application.Contract.Users.FinishRegisterDto)">
             <summary>
-            完成用户注册
+            补充用户信息
             </summary>
             <param name="input"></param>
             <returns></returns>
